@@ -1,27 +1,43 @@
 # AdminLTEAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+## Passo a Passo
 
-## Development server
+Instalar angular cli:    npm install -g @angular/cli
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+criar um novo:           ng new adminlteangular
 
-## Code scaffolding
+Instalar o AdminLte 3:   npm install admin-lte@^3.0 --save
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+verificar o package.json se ta tudo la
 
-## Build
+acessar o site do adminlte: https://adminlte.io/themes/v3/index.html
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+atualizar o angular.json com os css e javascripts da template
 
-## Running unit tests
+atualizar o app.component.html
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+copiar as imagens [ node_modules\admin-lte\dist\img ] para src/assets
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## CSS e js para o arquivo angular.json
 
-## Further help
+          styles: [
+            "node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css",
+            "node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css",
+            "node_modules/admin-lte/docs_html/assets/css/adminlte.css" 
+            ]
+           
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+        scripts: [
+          "node_modules/admin-lte/plugins/jquery/jquery.js",
+          "node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js",
+          "node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js",
+          "node_modules/admin-lte/dist/js/adminlte.js",
+          "node_modules/admin-lte/dist/js/demo.js",
+          "node_modules/admin-lte/plugins/jquery-mousewheel/jquery.mousewheel.js",
+          "node_modules/admin-lte/plugins/raphael/raphael.js",
+          "node_modules/admin-lte/plugins/jquery-mapael/jquery.mapael.js",
+          "node_modules/admin-lte/plugins/jquery-mapael/maps/usa_states.js",
+          "node_modules/admin-lte/plugins/chart.js/Chart.js",
+          "node_modules/admin-lte/dist/js/pages/dashboard2.js"
+        ]
